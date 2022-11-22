@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.GUI.MasterView">
+   <children>
+      <VBox alignment="CENTER" layoutX="100.0" layoutY="161.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="161.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <ListView fx:id="productionList" prefHeight="200.0" prefWidth="200.0" />
+                  <ListView fx:id="creditList" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutY="39.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+         <children>
+            <TextField fx:id="txt" alignment="CENTER" onAction="#search" />
+            <Button fx:id="search" mnemonicParsing="false" onAction="#search" text="Søg" />
+            <Button fx:id="login" mnemonicParsing="false" onAction="#search" text="Login" />
+         </children>
+      </HBox>
+      <MenuButton fx:id="btnMenu" alignment="CENTER" layoutX="101.0" layoutY="126.0" mnemonicParsing="false" text="Opret">
+         <items>
+            <MenuItem fx:id="btnProduction" mnemonicParsing="false" text="Produktion" />
+            <MenuItem fx:id="createCredit" mnemonicParsing="false" text="Kreditering" />
+            <MenuItem fx:id="person" mnemonicParsing="false" text="Person" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
